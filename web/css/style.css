@@ -1338,7 +1338,7 @@ p.m_5 a {
 	color: #3e3f3f;
 	font-size:13px;
 }
-.btn_form form input[type="submit"] {
+.add-to-cart-button a {
 	cursor: pointer;
 	border: none;
 	outline: none;
@@ -1346,15 +1346,13 @@ p.m_5 a {
 	font-size: 1em;
 	padding: 10px 34px;
 	background:#f36f36;
+	text-decoration: none;
 	color: #FFF;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-}
-.btn_form form input[type="submit"]:hover{
-	background:#f36f36;
 }
 span.m_link a {
 	color: #555;
@@ -1717,6 +1715,258 @@ ul.list li a{
 	width:100%;
 	min-height:300px;
 }
-.wishlist{
-	min-height:500px;
+/*--cart--*/
+.cart-container h3{
+	font-size:1em;
+	color:#212121;
+	text-transform:uppercase;
+}
+.cart-container h3 span{
+	color:#f36f36;
+}
+.table-cart-items th:nth-child(1){
+	width: 2em
+}
+.table-cart-items th:nth-child(2){
+	width: 15em
+}
+.table-cart-items th:nth-child(3){
+	width: 12em
+}
+.table-cart-items th:nth-child(5){
+	width: 10em
+}
+.table-cart-items th:nth-child(6){
+	width: 4em
+}
+.checkout h3{
+	font-size:1em;
+	color:#212121;
+	text-transform:uppercase;
+	margin:5em 0 0;
+}
+.checkout h3 span{
+	color:#f36f36;
+}
+table.table-cart-items {
+	width:100%;
+	margin:0 auto;
+}
+.table-cart-items thead {
+    background:#F2F2F2;
+}
+.table-cart-items th{
+    background:none;
+    color:#212121 !important;
+    text-transform: capitalize;
+    font-size: 13px;
+    border-right: 1px solid #C5C5C5;
+    border-top: 1px solid #C5C5C5;
+}
+.table-cart-items th:nth-child(1) {
+    border-left: 1px solid #C5C5C5;
+}
+.table-cart-items th, .table-cart-items td {
+    text-align: center;
+    padding: 7px;
+    font-size: 14px;
+    color: #212121;
+}
+.table-cart-items td {
+	border:1px solid #CDCDCD;
+}
+td.invert-image a img {
+    width:30%;
+    margin: 0 auto;
+}
+.invert .close {
+	position: relative
+}
+.rem{
+	display: flex;
+	justify-content: center
+}
+.remove-cart-item {
+    background: url('../images/close.png') no-repeat 0px 0px;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+.checkout-left-basket h4{
+	padding: 1em;
+    background:#f36f36;
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 1em;
+}
+.checkout-left {
+    margin: 2em 0 0;
+}
+.checkout-left-basket ul li{
+	list-style-type:none;
+	margin-bottom:1em;
+	font-size:14px;
+	color:#999;
+	margin-left: -3em;
+}
+.checkout-left-basket {
+    float: left;
+    width: 25%;
+}
+.checkout-right-basket{
+	float: right;
+    margin-top: 0.5em;
+}
+.checkout-left-basket ul li span {
+    float: right;
+}
+.checkout-left-basket ul li:nth-child(5) {
+    font-size: 1em;
+    color: #212121;
+    font-weight: 600;
+    padding: 1em 0;
+    border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+    margin: 2em 0 0;
+}
+.checkout-right-basket a{
+	padding:1em 2em;
+	margin-left: 5px;
+	color:#fff;
+	font-size:1em;
+	background:#f36f36;
+	text-decoration:none;
+}
+.checkout-right-basket a span {
+    top: 0.1em;
+}
+/*-- quantity-starts --*/
+ .value-minus,
+.value-plus,.value-minus1,
+.value-plus1{
+    height: 40px;
+    line-height: 24px;
+    width: 40px;
+    margin-right: 3px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+	border:1px solid #b2b2b2;
+	    vertical-align: bottom;
+}
+.quantity-select .entry.value-minus:before,
+.quantity-select .entry.value-plus:before,.quantity-select .entry.value-minus1:before,
+.quantity-select .entry.value-plus1:before{
+	content: ""; 
+	width: 13px;
+	height: 2px; 
+	background: #000;
+	left: 50%;
+	margin-left: -7px; 
+	top: 50%;
+	margin-top: -0.5px;
+	position: absolute;
+}
+.quantity-select .entry.value-plus:after,.quantity-select .entry.value-plus1:after{
+	content: "";
+	height: 13px;
+	width: 2px; 
+	background: #000;
+	left: 50%; 
+	margin-left: -1.4px;
+    top: 50%;
+    margin-top: -6.2px;
+	position: absolute;
+}
+.value,.value1  {
+    cursor: default;
+    width: 40px;
+	height:40px;
+    padding: 8px 0px;
+    color: #A9A9A9;
+    line-height: 24px;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    text-align: center;
+    display: inline-block;
+	margin-right: 3px;
+}
+.quantity-select .entry.value-minus:hover,
+ .quantity-select .entry.value-plus:hover,.quantity-select .entry.value-minus1:hover,
+ .quantity-select .entry.value-plus1:hover{
+	background: #E5E5E5;
+}
+
+.quantity-select .entry.value-minus,.quantity-select .entry.value-minus1{
+    margin-left: 0;
+}
+/*--checkout--*/
+.checkout-form{
+	position:relative;
+}
+.checkout-form div{
+	padding: 0;
+}
+.checkout-form span label{
+	margin-top: 10px;
+	color: #777777;
+	display: block;
+	font-size: 1em;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+.checkout-form input[type="text"], .checkout-form textarea ,
+.checkout-form select{
+	background: #FFFFFF;
+	border: 1px solid #DDD;
+	color: rgba(85, 81, 81, 0.84);
+	padding: 4px;
+	display: block;
+	width: 100%;
+	outline: none;
+	border-radius: 0px;
+	-webkit-appearance: none;
+}
+.checkout-form select option{
+	background: #fff
+}
+.checkout-form textarea{
+	resize:none;
+	height:12em;	
+	margin-bottom:0.5em;
+}
+.checkout-form input[type="button"]{
+	margin-top: 10px;
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	height: 3em;
+	width: 100%;
+	background: #f36f36;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.has-error{
+	color: red;
+}
+.checkout-form  input[type="text"].has-error, .checkout-form textarea.has-error ,
+.checkout-form select.has-error{
+	border: 1px solid red;	
 }
