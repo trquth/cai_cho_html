@@ -276,7 +276,7 @@ body a{
 }
 .search input[type="submit"] {
 	background: url('../images/search.png') no-repeat 24px 10px #f36f36;
-	padding: 12.5px 38px;
+	padding: 13.5px 38px;
 	border: none;
 	cursor: pointer;
 	position: absolute;
@@ -307,7 +307,7 @@ i.bag_left{
 }
 ul.bag li.bag_right{
 	background:#f36f36;
-	padding:16px 10px;
+	padding:11px 10px;
 	overflow:hidden;
 }
 ul.bag li.bag_right p{
@@ -1118,6 +1118,7 @@ ul.social li a i.skype{
 	padding:5em 0;
 }
 .block .block-title {
+	display: flex;
 	padding: 10px;
 	background: #f36f36;
 	min-height: 35px;
@@ -1125,6 +1126,27 @@ ul.social li a i.skype{
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
+}
+.navbar-header{
+	margin-right: 0;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 0;
+	float: right;
+}
+.title{
+	flex: 1;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	float: left;
+}
+.block .navbar-header button{
+	background: #fff
+	}
+.block .navbar-header button span{
+	background: gray;
 }
 .block .block-title strong {
 	display: block;
@@ -1201,12 +1223,14 @@ p.empty {
 	margin-bottom:0;
 }
 .mens-toolbar .pager {
+	display: flex;
 	padding: 5px 8px 3px 8px ;
 	float: right;
-	width: 45%;
+	width: 50%;
 	margin: 0;
 }
 .pager .sort-by {
+	flex: 2;
 	float: left;
 	color:#fff;
 	font-size: 0.8125em;
@@ -1221,9 +1245,11 @@ p.empty {
 select {
 	color: #000;
 }
+.cc_pagination{
+	flex: 1;
+}
 .cc_pagination div{
 	float: right;
-	background: blue
 }
 .cc_pagination ul li {
 	float: left;
